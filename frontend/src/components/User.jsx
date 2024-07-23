@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../style/User.css'
+import { useNavigate } from 'react-router-dom';
 
 const User = () => {
+  const navigate = useNavigate();
   const initialFormData = {
     userid: '',
     name: '',
@@ -28,6 +30,7 @@ const User = () => {
       await axios.post('http://localhost:5000/api/users', formData);
       alert('Form submitted successfully');
       setFormData(initialFormData); // Reset the form data
+      navigate('/users')
     } catch (error) {
       console.error('Error submitting form:', error);
       alert('Failed to submit form');

@@ -4,7 +4,7 @@ import axios from 'axios';
 import '../style/UserList.css';
 
 const UserList = () => {
-  const [users, setUsers] = useState([]);
+  const [user, setUsers] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,7 +23,7 @@ const UserList = () => {
     <div className="user-list-container">
       <h1>User Details</h1>
       <ul className="user-list">
-        {users.map(user => (
+        
           <li key={user._id}>
             <p>Name: {user.name}</p>
             <p>Movie Name: {user.moviename}</p>
@@ -31,7 +31,7 @@ const UserList = () => {
             <p>Contact No: {user.contactno}</p>
             <p>Ticket Count: {user.ticket_count}</p>
           </li>
-        ))}
+        
       </ul>
     </div>
   );

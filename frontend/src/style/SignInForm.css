@@ -1,0 +1,49 @@
+/* src/style/SignInForm.css */
+
+.sign-in-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .sign-in-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sign-in-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .sign-in-form input {
+    padding: 8px;
+    margin-bottom: 15px; /* Adjust the space between input fields */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .sign-in-form button {
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .sign-in-form button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  .sign-in-form .error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px; /* Adjust space to align with the input */
+    margin-bottom: 15px; /* Space below the error message */
+  }
+  
